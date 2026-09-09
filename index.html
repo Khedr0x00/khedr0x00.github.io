@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Khedr — Portfolio | Automation · IoT · Web · Security</title>
+<meta name="description" content="Portfolio of Mohamed Khedr (Khedr0x00) — security tooling, automation, IoT and web projects. All repositories, live from GitHub.">
+<meta name="author" content="Mohamed Khedr">
+<meta property="og:title" content="Mohamed Khedr — Portfolio">
+<meta property="og:description" content="Automation · IoT · Web · Security tooling — all projects, live from GitHub.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://khedr0x00.github.io">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/221099382?v=4">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/221099382?v=4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<canvas id="bg-grid" aria-hidden="true"></canvas>
+<div class="scanline" aria-hidden="true"></div>
+
+<button class="nois-btn" id="noise-toggle" title="Toggle background noise" aria-label="Toggle background noise">N0ISE</button>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="id-badge">
+      <span class="pulse-dot"></span> root@khedr0x00:~$ ./portfolio.sh
+    </div>
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/221099382?v=4" alt="Mohamed Khedr avatar" width="132" height="132">
+    <h1>Mohamed <span class="accent">Khedr</span></h1>
+    <p class="handle"><a href="https://github.com/Khedr0x00" target="_blank" rel="noopener">github.com/<b>Khedr0x00</b></a></p>
+    <p class="bio">Automation<span class="sep">·</span>IoT<span class="sep">·</span>Web<span class="sep">·</span>Security Tooling</p>
+    <p class="tagline">Building web GUIs, terminals, and reconnaissance tools that make offensive security work fast, visual, and accessible.</p>
+    <div class="stats" id="stats">
+      <div class="stat"><span class="num" id="stat-repos">—</span><span class="lbl">Projects</span></div>
+      <div class="stat"><span class="num" id="stat-stars">—</span><span class="lbl">Stars</span></div>
+      <div class="stat"><span class="num" id="stat-langs">—</span><span class="lbl">Languages</span></div>
+      <div class="stat"><span class="num" id="stat-followers">—</span><span class="lbl">Followers</span></div>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://github.com/Khedr0x00" target="_blank" rel="noopener">▶ View GitHub Profile</a>
+      <a class="btn btn-ghost" href="#projects" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'});return false;">Browse Projects ↓</a>
+    </div>
+    <div class="lang-strip" id="lang-strip"></div>
+  </div>
+</header>
+
+<main>
+  <section id="projects" class="projects">
+    <div class="section-head">
+      <h2>// All Projects <span class="count" id="proj-count"></span></h2>
+      <div class="controls">
+        <input id="search" type="search" placeholder="grep -i 'tool, topic, language…'" aria-label="Search projects">
+      </div>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>no results — try another query</p>
+    <p class="sync-note" id="sync-note"></p>
+  </section>
+</main>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<footer>
+  <p>© <span id="year"></span> Mohamed Khedr · <a href="https://github.com/Khedr0x00" target="_blank" rel="noopener">Khedr0x00</a> · deployed on GitHub Pages</p>
+  <p class="foot-note">data synced live from the GitHub API</p>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
