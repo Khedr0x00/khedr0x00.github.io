@@ -1,0 +1,31 @@
+{
+    "id": "telegram-osint-hub",
+    "name": "Telegram Osint Hub",
+    "folder": "telegram-osint-hub",
+    "category": "Cyber Security",
+    "status": "Completed",
+    "tags": [
+        "Python",
+        "FastApi",
+        "Docker",
+        "Linux"
+    ],
+    "link": "",
+    "description": "",
+    "images": [
+        "projects/telegram-osint-hub/images/1.webp",
+        "projects/telegram-osint-hub/images/2.webp",
+        "projects/telegram-osint-hub/images/3.webp",
+        "projects/telegram-osint-hub/images/4.webp"
+    ],
+    "cover": "projects/telegram-osint-hub/images/1.webp",
+    "is_for_sale": false,
+    "price": "$49",
+    "is_negotiable": false,
+    "license": "Full Source Code",
+    "features": [
+        "Full Source Code Included",
+        "Lifetime Updates & Technical Support",
+        "Complete Setup Documentation"
+    ]
+}

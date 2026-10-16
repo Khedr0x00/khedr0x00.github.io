@@ -1,80 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mohamed Khedr — Portfolio | Automation · IoT · Web · Security</title>
-<meta name="description" content="Portfolio of Mohamed Khedr (Khedr0x00) — security tooling, automation, IoT and web projects. All repositories, live from GitHub.">
-<meta name="author" content="Mohamed Khedr">
-<meta property="og:title" content="Mohamed Khedr — Portfolio">
-<meta property="og:description" content="Automation · IoT · Web · Security tooling — all projects, live from GitHub.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://khedr0x00.github.io">
-<meta property="og:image" content="https://avatars.githubusercontent.com/u/221099382?v=4">
-<link rel="icon" href="https://avatars.githubusercontent.com/u/221099382?v=4">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProManager - Developer & Cybersecurity Studio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<canvas id="bg-grid" aria-hidden="true"></canvas>
-<div class="scanline" aria-hidden="true"></div>
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon"><i class="fa-solid fa-bolt"></i></div>
+        <div>
+          <h2>ProManager</h2>
+          <span class="brand-sub">Dev & CyberSec Hub</span>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <button class="nav-item active" id="tab-about" data-view="about">
+          <span class="nav-icon"><i class="fa-solid fa-user-shield"></i></span> About Me
+        </button>
+        <button class="nav-item nav-item-shop" id="tab-shop" data-view="shop">
+          <span class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></span> Software Shop <span class="shop-pulse-badge">HOT</span>
+        </button>
+        <a href="https://khedr0x00.gitbook.com" target="_blank" rel="noopener noreferrer" class="nav-item nav-item-gitbook" id="nav-gitbook" title="Open GitBook Documentation">
+          <span class="nav-icon"><i class="fa-solid fa-book-bookmark"></i></span> GitBook Docs <i class="fa-solid fa-arrow-up-right-from-square external-link-icon"></i>
+        </a>
+        <a href="control.php" class="nav-item nav-item-control" id="nav-control" title="Open Admin Control Panel">
+          <span class="nav-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span> Admin Control <i class="fa-solid fa-gear external-link-icon"></i>
+        </a>
+        <div class="nav-divider">PROJECTS</div>
+        <button class="nav-item" data-view="projects" data-category="all">
+          <span class="nav-icon"><i class="fa-solid fa-folder-open"></i></span> All Projects
+        </button>
+        <button class="nav-item" data-view="projects" data-category="Web Development">
+          <span class="nav-icon"><i class="fa-solid fa-laptop-code"></i></span> Web Development
+        </button>
+        <button class="nav-item" data-view="projects" data-category="Desktop Development">
+          <span class="nav-icon"><i class="fa-solid fa-desktop"></i></span> Desktop Development
+        </button>
+        <button class="nav-item" data-view="projects" data-category="Game Development">
+          <span class="nav-icon"><i class="fa-solid fa-gamepad"></i></span> Game Development
+        </button>
+        <button class="nav-item" data-view="projects" data-category="Cyber Security">
+          <span class="nav-icon"><i class="fa-solid fa-shield-halved"></i></span> Cyber Security
+        </button>
+        <button class="nav-item" data-view="projects" data-category="IT Solutions">
+          <span class="nav-icon"><i class="fa-solid fa-server"></i></span> IT Solutions
+        </button>
+        <button class="nav-item" data-view="projects" data-category="Data Entry">
+          <span class="nav-icon"><i class="fa-solid fa-keyboard"></i></span> Data Entry
+        </button>
+        <button class="nav-item" data-view="projects" data-category="3D">
+          <span class="nav-icon"><i class="fa-solid fa-cube"></i></span> 3D
+        </button>
+      </nav>
+      <div class="sidebar-footer">
+        <span class="status-dot online"></span>
+        <span>Storage: <code>projects/</code></span>
+      </div>
+    </aside>
 
-<button class="nois-btn" id="noise-toggle" title="Toggle background noise" aria-label="Toggle background noise">N0ISE</button>
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Navigation & Global Search -->
+      <header class="top-nav">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="search-input" placeholder="Search projects, software in shop, links or tags..." autocomplete="off" />
+        </div>
+        <div class="header-actions">
+          <select id="status-filter">
+            <option value="all">All Statuses</option>
+            <option value="Completed">Completed</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Active">Active</option>
+            <option value="On Hold">On Hold</option>
+          </select>
+          <button id="refresh-btn" title="Reload data"><i class="fa-solid fa-rotate-right"></i> Refresh</button>
+        </div>
+      </header>
 
-<header class="hero">
-  <div class="hero-inner">
-    <div class="id-badge">
-      <span class="pulse-dot"></span> root@khedr0x00:~$ ./portfolio.sh
-    </div>
-    <img class="avatar" src="https://avatars.githubusercontent.com/u/221099382?v=4" alt="Mohamed Khedr avatar" width="132" height="132">
-    <h1>Mohamed <span class="accent">Khedr</span></h1>
-    <p class="handle"><a href="https://github.com/Khedr0x00" target="_blank" rel="noopener">github.com/<b>Khedr0x00</b></a></p>
-    <p class="bio">Automation<span class="sep">·</span>IoT<span class="sep">·</span>Web<span class="sep">·</span>Security Tooling</p>
-    <p class="tagline">Building web GUIs, terminals, and reconnaissance tools that make offensive security work fast, visual, and accessible.</p>
-    <div class="stats" id="stats">
-      <div class="stat"><span class="num" id="stat-repos">—</span><span class="lbl">Projects</span></div>
-      <div class="stat"><span class="num" id="stat-stars">—</span><span class="lbl">Stars</span></div>
-      <div class="stat"><span class="num" id="stat-langs">—</span><span class="lbl">Languages</span></div>
-      <div class="stat"><span class="num" id="stat-followers">—</span><span class="lbl">Followers</span></div>
-    </div>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="https://github.com/Khedr0x00" target="_blank" rel="noopener">▶ View GitHub Profile</a>
-      <a class="btn btn-ghost" href="#projects" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'});return false;">Browse Projects ↓</a>
-    </div>
-    <div class="lang-strip" id="lang-strip"></div>
+      <!-- VIEW 1: ABOUT ME -->
+      <section class="view-section active" id="view-about">
+        <div class="profile-hero">
+          <div class="profile-avatar-wrap">
+            <div class="profile-avatar" id="profile-avatar-container"><i class="fa-solid fa-user-astronaut"></i></div>
+            <div class="cyber-badge-pulse">SECURED</div>
+          </div>
+          <div class="profile-info">
+            <div class="profile-tags-top">
+              <span class="chip-sec"><span class="dot green"></span> Available for Hire & Audits</span>
+              <span class="chip-badge">Full-Stack Dev</span>
+              <span class="chip-badge">IT Infrastructure</span>
+              <span class="chip-badge">Cybersecurity Specialist</span>
+            </div>
+            <h1 class="profile-name">Developer & Cybersecurity Engineer</h1>
+            <p class="profile-lead">
+              Bridging secure software engineering, enterprise IT infrastructure, and proactive offensive/defensive cybersecurity. Building resilient applications with security-by-design principles.
+            </p>
+            <div class="profile-actions">
+              <button class="btn-primary" id="btn-hero-shop"><i class="fa-solid fa-cart-shopping"></i> Browse Software Shop</button>
+              <button class="btn-secondary" id="btn-switch-projects"><i class="fa-solid fa-layer-group"></i> View Built Projects</button>
+            </div>
+
+            <!-- Social Media & Contact Links -->
+            <div class="social-connect-bar">
+              <span class="social-connect-label"><i class="fa-solid fa-share-nodes"></i> Connect with me:</span>
+              <div class="social-links-row">
+                <a href="https://t.me/" id="social-link-telegram" target="_blank" rel="noopener noreferrer" class="social-chip telegram" title="Connect on Telegram">
+                  <i class="fa-brands fa-telegram"></i>
+                  <span>Telegram</span>
+                </a>
+                <a href="https://wa.me/" id="social-link-whatsapp" target="_blank" rel="noopener noreferrer" class="social-chip whatsapp" title="Connect on WhatsApp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>WhatsApp</span>
+                </a>
+                <a href="https://instagram.com/" id="social-link-instagram" target="_blank" rel="noopener noreferrer" class="social-chip instagram" title="Connect on Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+                <a href="https://facebook.com/" id="social-link-facebook" target="_blank" rel="noopener noreferrer" class="social-chip facebook" title="Connect on Facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <span>Facebook</span>
+                </a>
+                <a href="https://twitter.com/" id="social-link-twitter" target="_blank" rel="noopener noreferrer" class="social-chip twitter" title="Connect on X (Twitter)">
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <span>Twitter / X</span>
+                </a>
+                <a href="https://tiktok.com/" id="social-link-tiktok" target="_blank" rel="noopener noreferrer" class="social-chip tiktok" title="Connect on TikTok">
+                  <i class="fa-brands fa-tiktok"></i>
+                  <span>TikTok</span>
+                </a>
+              </div>
+
+              <!-- Multi-Channel YouTube Showcase -->
+              <div class="youtube-channels-bar" id="youtube-channels-bar">
+                <span class="youtube-channels-label">
+                  <i class="fa-brands fa-youtube" style="color: #ff0000;"></i> YouTube Channels:
+                </span>
+                <div class="youtube-links-row" id="youtube-links-container">
+                  <!-- Injected dynamically from config.json -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Disciplines Grid -->
+        <div class="discipline-grid">
+          <div class="discipline-card">
+            <div class="discipline-header">
+              <div class="discipline-icon dev-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Software Engineering</h3>
+            </div>
+            <p class="discipline-desc">
+              Architecting robust frontend & backend systems. Fluent in modern web frameworks, REST/GraphQL APIs, distributed architectures, and clean maintainable code.
+            </p>
+            <ul class="pill-list">
+              <li>Python</li>
+              <li>JavaScript / TS</li>
+              <li>HTML5 / CSS3</li>
+              <li>Node.js</li>
+              <li>REST APIs</li>
+              <li>SQL / NoSQL</li>
+            </ul>
+          </div>
+
+          <div class="discipline-card highlight-sec">
+            <div class="discipline-header">
+              <div class="discipline-icon sec-icon"><i class="fa-solid fa-shield-virus"></i></div>
+              <h3>Cybersecurity & InfoSec</h3>
+            </div>
+            <p class="discipline-desc">
+              Proactive threat mitigation, ethical penetration testing, vulnerability assessment, OWASP Top 10 remediation, SIEM monitoring, and cryptographic protocols.
+            </p>
+            <ul class="pill-list">
+              <li>Ethical Hacking</li>
+              <li>OWASP Top 10</li>
+              <li>Network Pentesting</li>
+              <li>Wireshark & Nmap</li>
+              <li>Burp Suite</li>
+              <li>Cryptography</li>
+            </ul>
+          </div>
+
+          <div class="discipline-card">
+            <div class="discipline-header">
+              <div class="discipline-icon it-icon"><i class="fa-solid fa-server"></i></div>
+              <h3>IT & Infrastructure</h3>
+            </div>
+            <p class="discipline-desc">
+              Deploying and hardening enterprise Linux & Windows environments, firewall management, Active Directory policies, Docker containerization, and automated CI/CD.
+            </p>
+            <ul class="pill-list">
+              <li>Linux (Debian/RHEL)</li>
+              <li>Windows Server / AD</li>
+              <li>Docker & Podman</li>
+              <li>Firewalls & VPNs</li>
+              <li>TCP/IP & DNS</li>
+              <li>Bash / PowerShell</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Interactive Terminal Simulator -->
+        <div class="terminal-card" id="skills-overview">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="terminal-title">root@secops-terminal:~# whoami</span>
+          </div>
+          <div class="terminal-body">
+            <p class="term-line"><span class="term-prompt">secops@host:~$</span> cat /etc/profile/mission.txt</p>
+            <p class="term-output">"Securing systems before threats exploit them. Writing clean code that scales securely."</p>
+            <p class="term-line"><span class="term-prompt">secops@host:~$</span> nmap -sV -sC localhost --services</p>
+            <p class="term-output">PORT 22/tcp OPEN [SSH Hardened with Key-Auth]<br/>PORT 80/443 OPEN [HTTPS TLSv1.3 Strict-Transport]<br/>PORT 8000/tcp OPEN [ProManager Local Management Engine]</p>
+            <p class="term-line"><span class="term-prompt">secops@host:~$</span> status-check</p>
+            <p class="term-output success-text">[✓] All services normal. Zero critical vulnerabilities detected. Ready for deployment.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIEW 2: PROJECT DASHBOARD -->
+      <section class="view-section" id="view-projects">
+        <!-- Metric KPIs -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-label">Total Projects</span>
+            <span class="stat-value" id="stat-total">0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">In Progress</span>
+            <span class="stat-value stat-progress" id="stat-inprogress">0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Completed</span>
+            <span class="stat-value stat-completed" id="stat-completed">0</span>
+          </div>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="section-header">
+          <h3 id="current-category-title">All Projects</h3>
+          <span id="project-count" class="badge-count">0 projects</span>
+        </div>
+        <div class="grid-container" id="projects-grid">
+          <!-- Dynamic Website-Manager Styled Cards injected here -->
+        </div>
+
+        <!-- Projects Pagination -->
+        <div class="pagination-wrapper" id="projects-pagination"></div>
+      </section>
+
+      <!-- VIEW 3: SOFTWARE SHOP / STORE -->
+      <section class="view-section" id="view-shop">
+        <div class="shop-hero-banner">
+          <div class="shop-hero-content">
+            <div class="shop-hero-badge"><i class="fa-solid fa-store"></i> DEVELOPER & CYBER STORE</div>
+            <h2>Software & Ready-to-Deploy Solutions</h2>
+            <p>
+              Directly acquire source codes, customized penetration tools, automations, and enterprise web solutions. 
+              All prices are open for negotiation with direct developer communication. 
+              <span class="ar-text-badge">الأسعار قابلة للتفاوض المباشر</span>
+            </p>
+          </div>
+          <div class="shop-hero-stats">
+            <div class="shop-stat-box">
+              <span class="shop-stat-num" id="shop-total-count">0</span>
+              <span class="shop-stat-lbl">Available Softwares</span>
+            </div>
+            <div class="shop-stat-box highlight-stat">
+              <span class="shop-stat-num"><i class="fa-solid fa-handshake"></i></span>
+              <span class="shop-stat-lbl">Price Negotiable</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitBook Documentation Banner -->
+        <div class="shop-gitbook-banner">
+          <div class="gitbook-banner-left">
+            <div class="gitbook-icon-badge"><i class="fa-solid fa-book-bookmark"></i></div>
+            <div class="gitbook-banner-info">
+              <h4>Documentation & Manuals (GitBook)</h4>
+              <p>Explore in-depth technical documentation, deployment guides, architectural blueprints, and security write-ups on GitBook.</p>
+            </div>
+          </div>
+          <a href="https://khedr0x00.gitbook.com" target="_blank" rel="noopener noreferrer" class="btn-gitbook-open">
+            <i class="fa-solid fa-book-open"></i> Open khedr0x00.gitbook.com <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <!-- Shop Filter Controls Bar -->
+        <div class="shop-filter-bar">
+          <div class="shop-filter-pills" id="shop-category-filters">
+            <button class="shop-pill-btn active" data-shop-cat="all"><i class="fa-solid fa-boxes-stacked"></i> All Software</button>
+            <button class="shop-pill-btn" data-shop-cat="Web Development"><i class="fa-solid fa-laptop-code"></i> Web Dev</button>
+            <button class="shop-pill-btn" data-shop-cat="Desktop Development"><i class="fa-solid fa-desktop"></i> Desktop Dev</button>
+            <button class="shop-pill-btn" data-shop-cat="Game Development"><i class="fa-solid fa-gamepad"></i> Games</button>
+            <button class="shop-pill-btn" data-shop-cat="Cyber Security"><i class="fa-solid fa-shield-halved"></i> Cyber & Security</button>
+            <button class="shop-pill-btn" data-shop-cat="IT Solutions"><i class="fa-solid fa-server"></i> IT Solutions</button>
+            <button class="shop-pill-btn" data-shop-cat="Data Entry"><i class="fa-solid fa-keyboard"></i> Data Entry</button>
+            <button class="shop-pill-btn" data-shop-cat="3D"><i class="fa-solid fa-cube"></i> 3D</button>
+          </div>
+          <div class="shop-filter-right">
+            <label class="shop-negotiable-toggle">
+              <input type="checkbox" id="filter-negotiable-only" />
+              <span><i class="fa-solid fa-hand-holding-dollar"></i> Negotiable Only (قابل للتفاوض)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Shop Products Grid -->
+        <div class="shop-grid" id="shop-grid">
+          <!-- Dynamic Shop Cards injected here -->
+        </div>
+
+        <!-- Shop Pagination -->
+        <div class="pagination-wrapper" id="shop-pagination"></div>
+      </section>
+    </main>
   </div>
-</header>
 
-<main>
-  <section id="projects" class="projects">
-    <div class="section-head">
-      <h2>// All Projects <span class="count" id="proj-count"></span></h2>
-      <div class="controls">
-        <input id="search" type="search" placeholder="grep -i 'tool, topic, language…'" aria-label="Search projects">
+  <!-- PROJECT DETAIL PREVIEW MODAL -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-dialog modal-advanced-dialog">
+      <div class="modal-header advanced-modal-header">
+        <div class="modal-header-main">
+          <div class="modal-header-badge-row">
+            <span class="inspector-badge"><i class="fa-solid fa-cube"></i> PROJECT INSPECTOR</span>
+            <span class="modal-cat-chip" id="modal-cat-chip">Web Development</span>
+            <span class="modal-status-chip" id="modal-status-chip"><span class="dot green"></span> Active</span>
+          </div>
+          <h2 id="modal-title">Project Name</h2>
+        </div>
+        <div class="modal-header-actions">
+          <button class="modal-tool-btn" id="modal-copy-link-btn" title="Copy Project Link"><i class="fa-solid fa-link"></i></button>
+          <button class="modal-close" id="modal-close" title="Close (Esc)">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body modal-grid-layout">
+        <!-- Left: Visual Stage & Gallery -->
+        <div class="modal-visual-column">
+          <div class="modal-slider-wrap" id="modal-slider-wrap">
+            <div class="modal-slider-container">
+              <button class="slider-btn slider-prev" id="modal-slider-prev" title="Previous Image (Left Arrow)">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <div class="modal-slider-stage">
+                <img id="modal-slider-img" src="" alt="Project image" />
+                <div class="slider-counter" id="modal-slider-counter">1 / 1</div>
+                <div class="slider-zoom-hint"><i class="fa-solid fa-maximize"></i> Expand Fullscreen</div>
+              </div>
+              <button class="slider-btn slider-next" id="modal-slider-next" title="Next Image (Right Arrow)">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="slider-thumbnails" id="modal-slider-thumbs"></div>
+          </div>
+        </div>
+
+        <!-- Right: Project Specifications & Details -->
+        <div class="modal-info-column">
+          <div class="inspector-panel spec-box">
+            <div class="spec-row">
+              <span class="spec-label"><i class="fa-regular fa-folder"></i> Category:</span>
+              <span class="spec-val" id="spec-category">Web Development</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label"><i class="fa-solid fa-signal"></i> Status:</span>
+              <span class="spec-val" id="spec-status">In Progress</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label"><i class="fa-solid fa-images"></i> Assets:</span>
+              <span class="spec-val" id="spec-assets-count">0 attached</span>
+            </div>
+            <div class="spec-row" id="spec-link-row">
+              <span class="spec-label"><i class="fa-solid fa-globe"></i> External:</span>
+              <span class="spec-val spec-link-val" id="spec-link-text">https://...</span>
+            </div>
+          </div>
+
+          <div class="inspector-panel">
+            <h4 class="panel-section-title"><i class="fa-solid fa-tag"></i> Technologies & Skills</h4>
+            <div class="modal-tags" id="modal-tags"></div>
+          </div>
+
+          <div class="inspector-panel expand-desc-panel">
+            <h4 class="panel-section-title"><i class="fa-regular fa-file-lines"></i> Project Overview</h4>
+            <div class="modal-description" id="modal-description"></div>
+          </div>
+
+          <div class="modal-actions">
+            <a id="modal-link" href="#" target="_blank" class="btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project Live</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="filters" id="filters"></div>
-    <div class="grid" id="grid"></div>
-    <p class="empty" id="empty" hidden>no results — try another query</p>
-    <p class="sync-note" id="sync-note"></p>
-  </section>
-</main>
-
-<div class="modal" id="modal" aria-hidden="true">
-  <div class="modal-card" role="dialog" aria-modal="true">
-    <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
-    <div id="modal-body"></div>
   </div>
-</div>
 
-<footer>
-  <p>© <span id="year"></span> Mohamed Khedr · <a href="https://github.com/Khedr0x00" target="_blank" rel="noopener">Khedr0x00</a> · deployed on GitHub Pages</p>
-  <p class="foot-note">data synced live from the GitHub API</p>
-</footer>
+  <!-- SHOP INQUIRY & NEGOTIATION MODAL -->
+  <div class="modal-overlay" id="shop-inquiry-modal">
+    <div class="modal-dialog shop-modal-dialog">
+      <div class="modal-header advanced-modal-header">
+        <div class="modal-header-main">
+          <div class="modal-header-badge-row">
+            <span class="inspector-badge"><i class="fa-solid fa-handshake"></i> SOFTWARE PURCHASE & NEGOTIATION</span>
+            <span class="shop-negotiable-chip" id="shop-modal-neg-chip">Negotiable / قابل للتفاوض</span>
+          </div>
+          <h2 id="shop-modal-title">Software Name</h2>
+        </div>
+        <button class="modal-close" id="shop-modal-close" title="Close (Esc)">&times;</button>
+      </div>
+      <div class="modal-body shop-inquiry-body">
+        <div class="shop-inquiry-left">
+          <div class="shop-modal-img-wrap">
+            <img id="shop-modal-img" src="" alt="Software Preview" />
+          </div>
+          <div class="shop-modal-pricing-box">
+            <div class="shop-modal-price-lbl">Listed Price / السعر المحدد:</div>
+            <div class="shop-modal-price-val" id="shop-modal-price">$49</div>
+            <div class="shop-modal-price-sub" id="shop-modal-price-status">✨ السعر قابل للتفاوض - Price is Open to Offers</div>
+          </div>
+          <div class="shop-modal-specs">
+            <div class="spec-row"><span class="spec-label"><i class="fa-solid fa-id-card"></i> License:</span> <span class="spec-val" id="shop-modal-license">Full Source Code</span></div>
+            <div class="spec-row"><span class="spec-label"><i class="fa-solid fa-folder-tree"></i> Category:</span> <span class="spec-val" id="shop-modal-category">Cyber Security</span></div>
+            <div class="spec-row"><span class="spec-label"><i class="fa-solid fa-clock-rotate-left"></i> Delivery:</span> <span class="spec-val">Instant Digital Package</span></div>
+          </div>
+        </div>
 
-<script src="assets/js/data.js"></script>
-<script src="assets/js/app.js"></script>
+        <div class="shop-inquiry-right">
+          <h3 class="shop-form-heading"><i class="fa-solid fa-tags"></i> Make an Offer / Send Negotiation Inquiry</h3>
+          <p class="shop-form-desc">Interested in buying or customizing this software? Propose your price or send your requirement directly to the developer.</p>
+
+          <div class="shop-field-group">
+            <label for="offer-price-input"><i class="fa-solid fa-money-bill-wave"></i> Your Proposed Offer / سعرك المقترح:</label>
+            <div class="input-with-icon">
+              <span class="input-affix">$</span>
+              <input type="text" id="offer-price-input" placeholder="e.g. 40 or negotiable budget" />
+            </div>
+          </div>
+
+          <div class="shop-field-group">
+            <label for="offer-contact-input"><i class="fa-solid fa-user-check"></i> Your Name / Contact Handle:</label>
+            <input type="text" id="offer-contact-input" placeholder="Name, Telegram @handle, or Email" />
+          </div>
+
+          <div class="shop-field-group">
+            <label for="offer-msg-input"><i class="fa-regular fa-message"></i> Message or Custom Modifications Needed:</label>
+            <textarea id="offer-msg-input" rows="3" placeholder="Mention any custom feature requests, timeline or questions..."></textarea>
+          </div>
+
+          <div class="shop-inquiry-actions">
+            <button class="btn-contact-action btn-whatsapp" id="btn-send-whatsapp"><i class="fa-brands fa-whatsapp"></i> Inquire via WhatsApp</button>
+            <button class="btn-contact-action btn-telegram" id="btn-send-telegram"><i class="fa-brands fa-telegram"></i> Inquire via Telegram</button>
+            <button class="btn-contact-action btn-copy-inquiry" id="btn-copy-offer"><i class="fa-solid fa-copy"></i> Copy Offer Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FULLSCREEN LIGHTBOX POP-UP WINDOW -->
+  <div class="lightbox-overlay" id="lightbox-modal">
+    <button class="lightbox-close" id="lightbox-close" title="Close (Esc)">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" title="Previous (Left Arrow)">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <div class="lightbox-container">
+      <img class="lightbox-image" id="lightbox-img" src="" alt="Fullscreen preview" />
+      <div class="lightbox-footer">
+        <span class="lightbox-caption" id="lightbox-caption">Project Image</span>
+        <span class="lightbox-counter" id="lightbox-counter">1 / 1</span>
+      </div>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" title="Next (Right Arrow)">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast"></div>
+
+  <script src="js/app.js"></script>
 </body>
 </html>

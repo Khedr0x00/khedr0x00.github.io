@@ -1,0 +1,31 @@
+{
+    "id": "sticky-note",
+    "name": "Sticky Note",
+    "folder": "sticky-note",
+    "category": "Desktop Development",
+    "status": "Completed",
+    "tags": [
+        "Python",
+        "FastApi",
+        "Docker",
+        "Linux"
+    ],
+    "link": "",
+    "description": "",
+    "images": [
+        "projects/sticky-note/images/1.webp",
+        "projects/sticky-note/images/2.webp",
+        "projects/sticky-note/images/3.webp",
+        "projects/sticky-note/images/4.webp"
+    ],
+    "cover": "projects/sticky-note/images/1.webp",
+    "is_for_sale": false,
+    "price": "$49",
+    "is_negotiable": false,
+    "license": "Full Source Code",
+    "features": [
+        "Full Source Code Included",
+        "Lifetime Updates & Technical Support",
+        "Complete Setup Documentation"
+    ]
+}

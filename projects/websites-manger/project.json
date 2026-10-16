@@ -1,0 +1,32 @@
+{
+    "id": "websites-manger",
+    "name": "Websites Manger",
+    "folder": "websites-manger",
+    "category": "Web Development",
+    "status": "Completed",
+    "tags": [
+        "Python",
+        "Flask"
+    ],
+    "link": "",
+    "description": "",
+    "images": [
+        "projects/websites-manger/images/1.webp",
+        "projects/websites-manger/images/2.webp",
+        "projects/websites-manger/images/3.webp",
+        "projects/websites-manger/images/4.webp",
+        "projects/websites-manger/images/5.webp",
+        "projects/websites-manger/images/6.webp",
+        "projects/websites-manger/images/7.webp"
+    ],
+    "cover": "projects/websites-manger/images/1.webp",
+    "is_for_sale": false,
+    "price": "$49",
+    "is_negotiable": false,
+    "license": "Full Source Code",
+    "features": [
+        "Full Source Code Included",
+        "Lifetime Updates & Technical Support",
+        "Complete Setup Documentation"
+    ]
+}

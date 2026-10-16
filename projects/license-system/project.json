@@ -1,0 +1,29 @@
+{
+    "id": "license-system",
+    "name": "license system",
+    "folder": "license-system",
+    "category": "Desktop Development",
+    "status": "Completed",
+    "tags": [
+        "Python",
+        "FastApi",
+        "Docker",
+        "Linux"
+    ],
+    "link": "",
+    "description": "",
+    "images": [
+        "projects/license-system/images/1.webp",
+        "projects/license-system/images/2.webp"
+    ],
+    "cover": "projects/license-system/images/1.webp",
+    "is_for_sale": false,
+    "price": "$49",
+    "is_negotiable": false,
+    "license": "Full Source Code",
+    "features": [
+        "Full Source Code Included",
+        "Lifetime Updates & Technical Support",
+        "Complete Setup Documentation"
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "id": "cyber-tools",
+    "name": "cyber tools",
+    "folder": "cyber-tools",
+    "category": "Cyber Security",
+    "status": "Completed",
+    "tags": [
+        "Python",
+        "FastApi",
+        "Docker",
+        "Linux"
+    ],
+    "link": "",
+    "description": "",
+    "images": [
+        "projects/cyber-tools/images/1.webp",
+        "projects/cyber-tools/images/2.webp",
+        "projects/cyber-tools/images/3.webp",
+        "projects/cyber-tools/images/4.webp",
+        "projects/cyber-tools/images/5.webp",
+        "projects/cyber-tools/images/6.webp",
+        "projects/cyber-tools/images/7.webp",
+        "projects/cyber-tools/images/8.webp",
+        "projects/cyber-tools/images/9.webp",
+        "projects/cyber-tools/images/10.webp",
+        "projects/cyber-tools/images/11.webp",
+        "projects/cyber-tools/images/12.webp",
+        "projects/cyber-tools/images/13.webp",
+        "projects/cyber-tools/images/14.webp",
+        "projects/cyber-tools/images/15.webp",
+        "projects/cyber-tools/images/16.webp",
+        "projects/cyber-tools/images/17.webp",
+        "projects/cyber-tools/images/18.webp"
+    ],
+    "cover": "projects/cyber-tools/images/1.webp",
+    "is_for_sale": false,
+    "price": "$49",
+    "is_negotiable": false,
+    "license": "Full Source Code",
+    "features": [
+        "Full Source Code Included",
+        "Lifetime Updates & Technical Support",
+        "Complete Setup Documentation"
+    ]
+}

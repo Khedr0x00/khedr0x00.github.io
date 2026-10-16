@@ -1,0 +1,26 @@
+{
+    "id": "easy-excel",
+    "name": "easy excel",
+    "folder": "easy-excel",
+    "category": "Data Entry",
+    "status": "Completed",
+    "tags": [
+        "Python",
+        "FastApi",
+        "Docker",
+        "Linux"
+    ],
+    "link": "",
+    "description": "",
+    "images": [],
+    "cover": "projects/demo/cover.svg",
+    "is_for_sale": false,
+    "price": "$49",
+    "is_negotiable": false,
+    "license": "Full Source Code",
+    "features": [
+        "Full Source Code Included",
+        "Lifetime Updates & Technical Support",
+        "Complete Setup Documentation"
+    ]
+}

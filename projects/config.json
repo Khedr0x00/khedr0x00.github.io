@@ -1,0 +1,17 @@
+{
+    "profile_image": "projects/profile_1790805152_46cc85.jpg",
+    "social_links": {
+        "telegram": "https://t.me/",
+        "whatsapp": "https://wa.me/",
+        "instagram": "https://instagram.com/",
+        "facebook": "https://facebook.com/khedr0x00",
+        "twitter": "https://twitter.com/",
+        "tiktok": "https://tiktok.com/"
+    },
+    "youtube_channels": [
+        {
+            "title": "Main Tech Channel",
+            "url": "https://youtube.com/"
+        }
+    ]
+}

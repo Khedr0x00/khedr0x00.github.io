@@ -1,0 +1,31 @@
+{
+    "id": "html-manger",
+    "name": "html manger",
+    "folder": "html-manger",
+    "category": "Desktop Development",
+    "status": "Completed",
+    "tags": [
+        "Python",
+        "FastApi",
+        "Docker",
+        "Linux"
+    ],
+    "link": "",
+    "description": "",
+    "images": [
+        "projects/html-manger/images/1.webp",
+        "projects/html-manger/images/2.webp",
+        "projects/html-manger/images/3.webp",
+        "projects/html-manger/images/4.webp"
+    ],
+    "cover": "projects/html-manger/images/1.webp",
+    "is_for_sale": false,
+    "price": "$49",
+    "is_negotiable": false,
+    "license": "Full Source Code",
+    "features": [
+        "Full Source Code Included",
+        "Lifetime Updates & Technical Support",
+        "Complete Setup Documentation"
+    ]
+}

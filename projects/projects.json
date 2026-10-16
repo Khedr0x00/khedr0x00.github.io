@@ -1,0 +1,531 @@
+[
+    {
+        "id": "ssssssss",
+        "name": "Chat Website + Full Dashboard",
+        "folder": "ssssssss",
+        "category": "Web Development",
+        "status": "Completed",
+        "tags": [
+            "php",
+            "sqlite"
+        ],
+        "link": "",
+        "description": "",
+        "images": [
+            "projects/ssssssss/images/1.webp",
+            "projects/ssssssss/images/2.webp",
+            "projects/ssssssss/images/3.webp",
+            "projects/ssssssss/images/4.webp"
+        ],
+        "cover": "projects/ssssssss/images/1.webp",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "linux-finder-project",
+        "name": "Linux Finder",
+        "folder": "linux-finder-project",
+        "category": "IT Solutions",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [
+            "projects/linux-finder-project/images/1.webp"
+        ],
+        "cover": "projects/linux-finder-project/images/1.webp",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "movies-php-project",
+        "name": "movies + Dashboard",
+        "folder": "movies-php-project",
+        "category": "Web Development",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [
+            "projects/movies-php-project/images/1.webp"
+        ],
+        "cover": "projects/movies-php-project/images/1.webp",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "websites-manger",
+        "name": "Websites Manger",
+        "folder": "websites-manger",
+        "category": "Web Development",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "Flask"
+        ],
+        "link": "",
+        "description": "",
+        "images": [
+            "projects/websites-manger/images/1.webp",
+            "projects/websites-manger/images/2.webp",
+            "projects/websites-manger/images/3.webp",
+            "projects/websites-manger/images/4.webp",
+            "projects/websites-manger/images/5.webp",
+            "projects/websites-manger/images/6.webp",
+            "projects/websites-manger/images/7.webp"
+        ],
+        "cover": "projects/websites-manger/images/1.webp",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "telegram-osint-hub",
+        "name": "Telegram Osint Hub",
+        "folder": "telegram-osint-hub",
+        "category": "Cyber Security",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [
+            "projects/telegram-osint-hub/images/1.webp",
+            "projects/telegram-osint-hub/images/2.webp",
+            "projects/telegram-osint-hub/images/3.webp",
+            "projects/telegram-osint-hub/images/4.webp"
+        ],
+        "cover": "projects/telegram-osint-hub/images/1.webp",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "website-osint-hub",
+        "name": "Website Osint Hub",
+        "folder": "website-osint-hub",
+        "category": "Cyber Security",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [
+            "projects/website-osint-hub/images/1.webp",
+            "projects/website-osint-hub/images/2.webp"
+        ],
+        "cover": "projects/website-osint-hub/images/1.webp",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "hosts-manger",
+        "name": "Hosts Manger",
+        "folder": "hosts-manger",
+        "category": "IT Solutions",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [],
+        "cover": "projects/demo/cover.svg",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "linux-proccess-manger",
+        "name": "Linux Proccess Manger",
+        "folder": "linux-proccess-manger",
+        "category": "IT Solutions",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [],
+        "cover": "projects/demo/cover.svg",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "easy-excel",
+        "name": "easy excel",
+        "folder": "easy-excel",
+        "category": "Data Entry",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [],
+        "cover": "projects/demo/cover.svg",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "html-manger",
+        "name": "html manger",
+        "folder": "html-manger",
+        "category": "Desktop Development",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [
+            "projects/html-manger/images/1.webp",
+            "projects/html-manger/images/2.webp",
+            "projects/html-manger/images/3.webp",
+            "projects/html-manger/images/4.webp"
+        ],
+        "cover": "projects/html-manger/images/1.webp",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "pdf-manger",
+        "name": "pdf manger",
+        "folder": "pdf-manger",
+        "category": "Desktop Development",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [
+            "projects/pdf-manger/images/1.webp",
+            "projects/pdf-manger/images/2.webp"
+        ],
+        "cover": "projects/pdf-manger/images/1.webp",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "sticky-google-chrome-profiles-manger",
+        "name": "sticky google chrome profiles manger",
+        "folder": "sticky-google-chrome-profiles-manger",
+        "category": "Desktop Development",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [],
+        "cover": "projects/demo/cover.svg",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "drone-strike-simulator",
+        "name": "Drone Strike Simulator",
+        "folder": "drone-strike-simulator",
+        "category": "Game Development",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [],
+        "cover": "projects/demo/cover.svg",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "cyber-system",
+        "name": "Cyber System",
+        "folder": "cyber-system",
+        "category": "Cyber Security",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [
+            "projects/cyber-system/images/4.webp",
+            "projects/cyber-system/images/1.webp",
+            "projects/cyber-system/images/2.webp",
+            "projects/cyber-system/images/3.webp"
+        ],
+        "cover": "projects/cyber-system/images/4.webp",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "cv-system",
+        "name": "CV SYSTEM",
+        "folder": "cv-system",
+        "category": "Web Development",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [],
+        "cover": "projects/demo/cover.svg",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "sticky-note",
+        "name": "Sticky Note",
+        "folder": "sticky-note",
+        "category": "Desktop Development",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [
+            "projects/sticky-note/images/1.webp",
+            "projects/sticky-note/images/2.webp",
+            "projects/sticky-note/images/3.webp",
+            "projects/sticky-note/images/4.webp"
+        ],
+        "cover": "projects/sticky-note/images/1.webp",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "cyber-tools",
+        "name": "cyber tools",
+        "folder": "cyber-tools",
+        "category": "Cyber Security",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [
+            "projects/cyber-tools/images/1.webp",
+            "projects/cyber-tools/images/2.webp",
+            "projects/cyber-tools/images/3.webp",
+            "projects/cyber-tools/images/4.webp",
+            "projects/cyber-tools/images/5.webp",
+            "projects/cyber-tools/images/6.webp",
+            "projects/cyber-tools/images/7.webp",
+            "projects/cyber-tools/images/8.webp",
+            "projects/cyber-tools/images/9.webp",
+            "projects/cyber-tools/images/10.webp",
+            "projects/cyber-tools/images/11.webp",
+            "projects/cyber-tools/images/12.webp",
+            "projects/cyber-tools/images/13.webp",
+            "projects/cyber-tools/images/14.webp",
+            "projects/cyber-tools/images/15.webp",
+            "projects/cyber-tools/images/16.webp",
+            "projects/cyber-tools/images/17.webp",
+            "projects/cyber-tools/images/18.webp"
+        ],
+        "cover": "projects/cyber-tools/images/1.webp",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    },
+    {
+        "id": "license-system",
+        "name": "license system",
+        "folder": "license-system",
+        "category": "Desktop Development",
+        "status": "Completed",
+        "tags": [
+            "Python",
+            "FastApi",
+            "Docker",
+            "Linux"
+        ],
+        "link": "",
+        "description": "",
+        "images": [
+            "projects/license-system/images/1.webp",
+            "projects/license-system/images/2.webp"
+        ],
+        "cover": "projects/license-system/images/1.webp",
+        "is_for_sale": false,
+        "price": "$49",
+        "is_negotiable": false,
+        "license": "Full Source Code",
+        "features": [
+            "Full Source Code Included",
+            "Lifetime Updates & Technical Support",
+            "Complete Setup Documentation"
+        ]
+    }
+]
